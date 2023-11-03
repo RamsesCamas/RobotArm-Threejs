@@ -190,7 +190,7 @@ const materialPhong = new THREE.MeshPhongMaterial({color:0xEACF36})
 const ambientalLight = new THREE.AmbientLight(0x404040);
 ambientalLight.castShadow = true;
 scene.add(ambientalLight);
-const nicolasCageTexture = new THREE.TextureLoader().load("../imgs/NicolasCage.jpg");
+const nicolasCageTexture = new THREE.TextureLoader().load("../imgs/metalic_texture.webp");
 const floorMaterial = new THREE.MeshLambertMaterial({ map: nicolasCageTexture });
 const floor = new THREE.Mesh(new THREE.PlaneGeometry(1000,1000,10,10), floorMaterial);
 floor.receiveShadow = true;
